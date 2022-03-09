@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link href="./style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="./game.js"></script>
+  <script>
+    //runs on load
+    input = document.getElementById("text")
+  
+    //keypress event listens for the enter key on the input element
+    input.addEventListener("keypress", (event)=> {
+    if (event.keyCode === 13) { 
+      event.preventDefault();
+      value = document.getElementById("text").value;};
+
+     //clears the user input values afterwards
+     document.getElementById("text").value = ""
+</script>
+</head>
+<body>
+   <h1>Wrestling Narrative: Raw Edittion</h1> 
+   
+  <div>  
+  <label for = "name-input">
+  <p>Wrestler Name:</p>    
+  <input id = "name-input" type ="text"></input>
+  </label>
+
+  </div>
+
+  <div>
+  <label for = "name-input">
+  <p>Opponent's Name:</p>    
+  </label>
+  <input id = "name-input" type ="text"></input>
+  </div>
+
+  <div class="container"> 
+      <div id="option-buttons" class="btn-grid">
+        <button class="btn">Options 1</button> 
+        <button class="btn">Options 2</button>
+        <button class="btn">Options 3</button>
+        <button class="btn">Options 4</button>
+      </div> 
+   </div>
+</body>
+</html>
