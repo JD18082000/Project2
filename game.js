@@ -88,8 +88,8 @@ function updateText(event){
 
   option1=`${value1} Irish Whip ${value2}, and boy, that must have been hurt `
   option2=`${value1} breaks the hold from ${value2}, he is pushing him into the corner.`
-  option3=`Oh! What a chop to start from ${value1} `
-  //option4=
+  option3=`Oh! What a chop from ${value1}, ${value2} fights back with his own.  `
+  option4=`These two are going at each other!!!`
 
 
   //update options based on text
@@ -100,6 +100,8 @@ function updateText(event){
   document.getElementById("btn4").innerHTML =`${option4}`;
 
 
+
+  document.getElementById("narrative-text").innerHTML = `${value1} and ${value2}`;
 }
 //This sequence codes is for the options.
 /*
