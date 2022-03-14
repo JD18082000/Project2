@@ -8,19 +8,7 @@
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script defer src="./game.js"></script>
-  <script>
-    //runs on load
-    input = document.getElementById("text")
-  
-    //keypress event listens for the enter key on the input element
-    input.addEventListener("keypress", (event)=> {
-    if (event.keyCode === 13) { 
-      event.preventDefault();
-      value = document.getElementById("text").value;};
 
-     //clears the user input values afterwards
-     document.getElementById("text").value = ""
-</script>
 </head>
 <body>
    <h1>Wrestling Narrative: Raw Edittion</h1> 
@@ -28,7 +16,7 @@
   <div>  
   <label for = "name-input">
   <p>Wrestler Name:</p>    
-  <input id = "name-input" type ="text"></input>
+  <input id = "name-input1" type ="text"></input>
   </label>
 
   </div>
@@ -37,15 +25,16 @@
   <label for = "name-input">
   <p>Opponent's Name:</p>    
   </label>
-  <input id = "name-input" type ="text"></input>
+  <input id = "name-input2" type ="text"></input>
   </div>
 
   <div class="container"> 
+    <h2 id="narrative-text">Testing</h2>
       <div id="option-buttons" class="btn-grid">
-        <button class="btn">Options 1</button> 
-        <button class="btn">Options 2</button>
-        <button class="btn">Options 3</button>
-        <button class="btn">Options 4</button>
+        <button class="btn" id="btn1" onclick="updateText(event);">Options 1</button> 
+        <button class="btn" id="btn2" onclick="updateText(event);">Options 2</button>
+        <button class="btn" id="btn3" onclick="updateText(event);">Options 3</button>
+        <button class="btn" id="btn4" onclick="updateText(event);">Options 4</button>
       </div> 
    </div>
 </body>
